@@ -1,0 +1,19 @@
+<html>
+    <body>
+        
+        <script>
+            function person(firstname,lastname){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.getfullname=function(){
+                    return this.firstname+" "+this.lastname;
+                }
+            }
+
+            let Person1=new person('john','dube')
+            let Person2=new person('hari','krish')
+            console.log(Person1.getfullname()) 
+            console.log(Person2)
+        </script>
+    </body>
+</html>

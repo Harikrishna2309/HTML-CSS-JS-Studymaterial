@@ -1,0 +1,57 @@
+<html>
+    <body>
+        <p id="p1">"p1"</p>
+        <p id="p2">"p2"</p>
+        <p id="p3">"p3"</p>
+        <p id="p4">"p4"</p>
+        <p id="p5">"p5"</p>
+        <p id="p6"></p>
+        <p id="p7"></p>
+        <p id="p8"></p>
+
+        <script>
+            let stringarray=["one","two","three"];
+            let numericarray=[1,2,3,4];
+            let decimalarray=[1.1,2.2,3.2];
+            let booleanarray=[true,false,true,false];
+            let data=[1,"hari","krish",true,2500,5.5];
+
+          //  document.getElementById("p1").innerHTML+=stringarray;
+          //  document.getElementById("p2").innerHTML+=numericarray;
+            document.getElementById("p3").innerHTML+=decimalarray;
+            document.getElementById("p4").innerHTML+=booleanarray;
+            document.getElementById("p5").innerHTML+=data;
+            
+            let cities=["mumbai","newyork","bangalore"];
+            document.getElementById("p1").innerHTML=cities.length;
+
+            cities[2]="delhi"
+            document.getElementById("p2").innerHTML=cities;
+
+            let numarr=[10,20,30,40,50]
+            console.log(numarr.at(0));
+            console.log(numarr.at(5));
+            console.log(numarr.at(-1));
+            console.log(numarr.at(-6));
+
+            cities[4]="coimbatore"
+            document.getElementById("p1").innerHTML=cities;
+            cities[cities.length]="us"
+            document.getElementById("p2").innerHTML=cities;
+            cities.push("malaysia");
+            document.getElementById("p3").innerHTML=cities;
+            cities.unshift("london");
+            document.getElementById("p4").innerHTML=cities;
+            cities.unshift("us","uk")
+            document.getElementById("p5").innerHTML=cities;
+            cities.pop();
+            document.getElementById("p6").innerHTML=cities;
+            document.getElementById("p7").innerHTML=cities.slice(0,4)+","+cities.slice(5,9);
+            let iterator=cities.entries();
+            for(let entry of iterator){
+                console.log(entry);
+            }
+
+        </script>
+    </body>
+</html>

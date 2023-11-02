@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <h1>backtrix</h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <script>
+            let amount=1000,rate=0.05,duration=3;
+            let check=amount*(1+rate+duration)
+            let result=`total amount payble: ${amount*(1+rate+duration)}`;
+            let str1="this is \"simple\"string";
+ 
+            document.getElementById("p1").innerHTML=result;
+            document.getElementById("p2").innerHTML="total amount="+check;
+            document.getElementById("p3").innerHTML=str1;
+        </script>
+    </body>
+</html>

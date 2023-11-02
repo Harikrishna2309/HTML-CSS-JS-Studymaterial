@@ -1,0 +1,26 @@
+<html>
+    <p id="p1"></p>
+    <script>
+        const number1=prompt("enter the student mark")
+        if(number1>90){
+            console.log("excellent")
+            document.getElementById("p1").innerHTML="excellent"
+        }
+        else if(number1>80 && number<91){
+            console.log("very good")
+            document.getElementById("p1").innerHTML="very good"
+        }
+        else if(number1>70 && number1<81){
+            console.log("good")
+            document.getElementById("p1").innerHTML="good"
+        }
+        else if(number1>60 && number1<71){
+            console.log("work hard")
+            document.getElementById("p1").innerHTML="work hard"
+        }
+        else{
+            console.log("improvement need")
+            document.getElementById("p1").innerHTML="imporvement needed"
+        }
+    </script>
+</html>

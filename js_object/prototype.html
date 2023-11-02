@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            function person(){
+                this.name='john'
+            }
+            person.prototype.age=20;
+            person.prototype.name='peter'
+
+            const person1=new person();
+            console.log(person1.age);
+            console.log(person1.name);
+            person.prototype={age:50}
+
+            const person3=new person();
+            console.log(person3.age)
+
+        </script>
+       
+    </body>
+</html>

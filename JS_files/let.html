@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <h1>DEMO: js VAR</h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <button onclick="check()"></button>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <script>
+            let name="hari";
+            let num=23;
+            let isactive=true;
+
+            document.getElementById("p1").innerHTML=name;
+            document.getElementById("p2").innerHTML=num;
+            document.getElementById("p3").innerHTML=isactive;
+            function check(){
+                let y=10;
+                if(true){
+                    var x=100;
+                    document.getElementById("p4").innerHTML="let variable: "+x;
+                }//let is local and var is global
+                document.getElementById("p5").innerHTML="var variable: "+x;
+            }
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <p id="p1"></p>
+    <script>
+        let sum=0
+        let number=0;
+        while(number>=0){
+            sum+=number;
+            number=parseInt(prompt("enter the number: "));
+            if(isNaN(number)){
+               // console.log("you entred a string");
+               alert('you entered the string')
+                number=0;
+                continue;
+            }
+        }
+        console.log(`the sum is${sum}.`);
+        document.getElementById('p1').innerHTML=sum;
+    </script>
+</html>

@@ -1,0 +1,89 @@
+<html>
+    <body>
+        
+        <script>
+           /* class item{
+                static count=0;
+                static getcount(){
+                    return item.count++;
+                }
+            }
+            console.log(item.getcount());
+            console.log(item.getcount());*/
+
+         /*   function add(x,y){
+                return x+y;
+            }
+            let result=add(10,20);
+            console.log(result);
+
+            let result1=add.call(this,10,20);
+            console.log(result1);*/
+
+          /*  var greeting='hi';
+            var messenger={
+                greeting:'hello'
+            }
+            function say(name){
+                console.log(this.greeting+' '+name)
+            }
+            say.call(this,'john');
+            say.call(messenger,'john');*/
+
+
+           /* function box(height,width){
+                this.height=height;
+                this.width=width;
+            }
+            function widget(height,width,color){
+                box.call(this,height,width);
+                this.color=color;
+            }
+            let Widget=new widget(100,200,'red');
+            console.log(Widget);*/
+
+          /*  const car={
+                name:"car",
+                start(){
+                    console.log('start the '+this.name);
+                },
+                speedup(){
+                    console.log('speed up the '+this.name);
+                },
+                stop(){
+                    console.log('stop the '+this.name);
+                },
+            };
+            const aircraft={
+                name:'aircraft',
+                fly(){
+                    console.log('fly');
+                },
+            };
+            car.start.call(aircraft);
+            car.speedup.call(aircraft);
+            aircraft.fly();*/
+
+          /*  var myarr=['i','k','l']
+            myarr[2];
+            console.log('2'in myarr)*/
+
+          /*  function f(){
+                var a=7;
+                var b=3;
+            }
+            console.log(a)*/
+
+            /*'use strict'
+            function foo(){
+                console.log(this)
+            }
+            foo()*/
+            var arr=[]
+            arr[0]=1
+            arr[1]=7
+            arr.foo=8
+            console.log(arr.length)
+        </script>
+    </body>
+</html>

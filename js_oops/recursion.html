@@ -1,0 +1,93 @@
+<html>
+    <body>
+        
+        <script>
+           /* function countdown(fromnumber){
+                console.log(fromnumber);
+
+                let nextnumber=fromnumber-1;
+                if(nextnumber>0){
+                    countdown(nextnumber);
+                }
+            }
+            countdown(3);*/
+
+
+           /* let countdown=function f(fromnumber){
+                console.log(fromnumber);
+
+                let nextnumber=fromnumber-1;
+                if(nextnumber>0){
+                    f(nextnumber);
+                }
+            }
+           let newyearcountdown=countdown;
+           countdown=null;
+           newyearcountdown(10);*/
+
+
+          /* function sum(n){
+            if(n<=1){
+                return n;
+            }
+            return n +sum(n-1);
+           }
+           console.log("sum= "+sum(5))*/
+
+
+         /*  function fact(n){
+            if(n<=1){
+            return n;
+            }
+            return n*fact(n-1);
+        
+           }
+           console.log("factorial= "+fact(5));*/
+
+
+          /* function fibo(a,b,n){
+            
+            if(n>=1){
+                
+                console.log((c=a+b));
+                n=n-1;
+                a=b;
+                b=c;
+                fibo(a,b,n)
+            }
+
+           }
+           console.log(0);
+           console.log(1);
+           fibo(0,1,10);*/
+
+
+
+          /* function sum(x=3,y=5){
+            return x+y;
+           }
+           console.log(sum(5,15))
+           console.log(sum(5))
+           console.log(sum())*/
+
+
+          /* function sum(y=1,x=y){
+            console.log(x+y);
+           }
+           function sum1(x=y,y=1){
+            console.log(x+y);
+           }
+           sum();
+           sum1();*/
+
+
+           const sum=()=>15;
+           const calculate=function(x,y=x*sum()){
+            return x+y;
+           }
+           const result=calculate(10);
+           console.log(result);
+
+        </script>
+    </body>
+</html>

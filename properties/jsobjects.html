@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <h1>
+            javascript object
+        </h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+
+        <script>
+            var person=new Object();
+            person.firstname="hari";
+            person["lastname"]="krish";
+            person.age=22;
+            person.getfullname=function(){
+                return this.firstname+" "+this.lastname;
+            };
+            document.getElementById("p1").innerHTML=person.firstname;
+            document.getElementById("p2").innerHTML=person.lastname;
+
+            document.getElementById("p3").innerHTML=person["firstname"]
+            document.getElementById("p4").innerHTML=person["lastname"]
+
+            document.getElementById("p5").innerHTML=person.getfullname();
+        </script>
+    </body>
+</html>

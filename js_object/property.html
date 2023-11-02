@@ -1,0 +1,49 @@
+<html>
+    <body>
+        
+        <script>
+          /*  let person={
+                firstname:'hari',
+                lastname:'krishna'
+            }
+            person.greet=function(){
+                console.log('hello');
+            }
+            person.greet();
+            console.log(person);*/
+
+
+           /* let person={
+                firstname:'hari',
+                lastname:'krishna',
+                greet:function(){
+                    console.log("hello.world");
+
+                },
+                getfullname:function(){
+                    return this.firstname+" "+this.lastname;
+                }
+        
+            }
+            console.log(person.firstname);
+            console.log(person.getfullname);*/
+
+
+            function person(firstname,lastname){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                if(!new.target){
+                    return new person(firstname,lastname);  //if new is not present
+                }
+
+                this.getfullname=function(){
+                    console.log(this.firstname+' '+this.lastname)
+                }
+            }
+            let obj= person('abi','krish');//without new if is excuted//obj=new person
+            console.log(obj);
+            obj.getfullname();
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+<html>
+    <body>
+        
+        <script>
+          /*  const person={
+                firstname:'john',
+                lastname:'doe'
+            };
+            person.age=25;
+            for(const obj in person){
+                console.log(obj);
+                console.log(person[obj]);
+            }*/
+
+
+          /*  const student=['john','sara','jack'];
+
+            //for of loop
+            for(let element of student){
+                console.log (element)
+            }
+
+
+            //for in loop
+            for(const obj in student){
+                console.log(obj);
+                console.log(student[obj])
+            }*/
+          /*  const string='hari';
+            for(let i of string){
+                console.log(i);
+            }
+            const set=new Set([1,2,3,2,"hi","1","hi",5])
+            for(let i of set){
+                console.log(i)
+            }*/
+
+
+          /*  let map=new Map();
+
+            map.set('name','jack');
+            map.set('age','27');
+
+            for(let [key,value]of map){
+                console.log(key+'-'+value);
+            }
+
+            const person={
+                'stud id':12,
+                'stud name':'hari',
+                'mark':76
+            }
+            for(const obj in person){
+                console.log(obj+' '+person[obj])
+            }*/
+
+            class person{
+                constructor(name){
+                    this.name=name;
+                }
+                getname(){
+                    return this.name;
+                }
+                static createanonymous(gender){
+                    let name=gender=="male" ?"vignesh":"lavanya";
+                    return new person(name);
+                }
+            }
+            console.log(person.createanonymous("male"))
+            console.log(person.getname);
+        </script>
+
+    </body>
+</html>

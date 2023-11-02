@@ -1,0 +1,91 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Web Page</title>
+<style>
+  body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url(nature1.jpeg);
+    background-size: cover;
+  }
+
+  header {
+    background-image: url('header-image.jpg');
+    background-size: cover;
+    color: rgb(234, 21, 21);
+    text-align: center;
+    padding: 100px 0;
+  }
+
+  nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin:20px;
+    font-weight: bold;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 20px;
+    padding: 20px;
+  }
+
+  .content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Website</h1>
+    <marquee behavior="" direction="scroll">
+    <p style="color: rgb(123, 10, 133);">New life new beginning</p>
+    </marquee>
+  </header>
+
+  <nav>
+    <a href="part1.html">Home</a>
+    <a href="login.html">About</a>
+    <a href="login.html">Services</a>
+    <a href="login.html">Profile</a>
+    <a href="login.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <h2>About Us</h2>
+      <p>Providing personal information about the person.The informations are true and legible and are varified by our team.</p>
+    </div>
+    <div class="content">
+      <h2>Services</h2>
+      <p>We offer a wide range of services to meet your needs. From creating your own website to maintaing it.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p style="color: aqua;"> @. <em>Do today what should be done.</em></p>
+  </footer>
+</body>
+</html>

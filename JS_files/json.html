@@ -1,0 +1,36 @@
+<html>
+    <body>
+        
+        <h1>
+            DEMO
+        </h1>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <script>
+            const role="student"
+            const person={name:'hari'};
+            person.name="krish";
+
+            let product={pname:"hk"};
+            product.pname="tv";
+
+            document.getElementById("p1").innerHTML=person.name;
+            document.getElementById("p2").innerHTML=role;
+
+        </script>
+        <hr>
+        <p id="p3"></p>
+        <p id="p4"></p>
+        <p id="p5"></p>
+        <script>
+            let greet="hello";
+            function myfunction(){
+                msg="javascript";
+                document.getElementById("p3").innerHTML=greet+msg;
+            }
+            myfunction();
+            document.getElementById("p4").innerHTML=greet;
+            document.getElementById("p5").innerHTML=msg;
+        </script>
+    </body>
+</html>
